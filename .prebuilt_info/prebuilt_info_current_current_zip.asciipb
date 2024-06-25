@@ -1,6 +1,12 @@
 drops {
   android_build_drop {
+<<<<<<< HEAD
     build_id: "T1009772"
+||||||| merged common ancestors
+    build_id: "T1010120"
+=======
+    build_id: "T1010137"
+>>>>>>> 1570d4a35c2aa0297d87e5564315dda8381e85e1
     target: "train_build"
     source_file: "mainline-sdks/for-latest-build/current/com.google.android.os.statsd/sdk/statsd-module-sdk-current.zip"
   }
