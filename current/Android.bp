@@ -51,10 +51,7 @@ java_sdk_library_import {
         var_name: "source_build",
     },
     visibility: ["//visibility:public"],
-    apex_available: [
-        "com.android.os.statsd",
-        "test_com.android.os.statsd",
-    ],
+    apex_available: ["com.android.os.statsd"],
     licenses: ["statsd-module-sdk_Android-Apache-2.0"],
     shared_library: false,
     permitted_packages: [
@@ -97,10 +94,7 @@ java_import {
         var_name: "source_build",
     },
     visibility: ["//visibility:public"],
-    apex_available: [
-        "com.android.os.statsd",
-        "test_com.android.os.statsd",
-    ],
+    apex_available: ["com.android.os.statsd"],
     licenses: ["statsd-module-sdk_Android-Apache-2.0"],
     jars: ["java_systemserver_libs/snapshot/jars/are/invalid/service-statsd.jar"],
     min_sdk_version: "30",
@@ -121,10 +115,7 @@ cc_prebuilt_library_shared {
         var_name: "source_build",
     },
     visibility: ["//visibility:public"],
-    apex_available: [
-        "com.android.os.statsd",
-        "test_com.android.os.statsd",
-    ],
+    apex_available: ["com.android.os.statsd"],
     licenses: ["statsd-module-sdk_Android-Apache-2.0"],
     stl: "libc++_static",
     compile_multilib: "both",
@@ -160,10 +151,7 @@ cc_prebuilt_library_shared {
         var_name: "source_build",
     },
     visibility: ["//visibility:public"],
-    apex_available: [
-        "com.android.os.statsd",
-        "test_com.android.os.statsd",
-    ],
+    apex_available: ["com.android.os.statsd"],
     licenses: ["statsd-module-sdk_Android-Apache-2.0"],
     stl: "libc++_static",
     compile_multilib: "both",
