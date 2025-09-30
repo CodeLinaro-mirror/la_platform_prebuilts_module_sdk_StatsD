@@ -187,4 +187,3 @@ Lcom/android/internal/statsd/flags/com/android/os/statsd/flags/CustomFeatureFlag
 Lcom/android/internal/statsd/flags/com/android/os/statsd/flags/CustomFeatureFlags$$ExternalSyntheticLambda5;->test(Ljava/lang/Object;)Z,core-platform-api,public-api,system-api,test-api
 Lcom/android/internal/statsd/flags/com/android/os/statsd/flags/CustomFeatureFlags$$ExternalSyntheticLambda6;->test(Ljava/lang/Object;)Z,core-platform-api,public-api,system-api,test-api
 Lcom/android/internal/statsd/flags/com/android/os/statsd/flags/CustomFeatureFlags$$ExternalSyntheticLambda7;->test(Ljava/lang/Object;)Z,core-platform-api,public-api,system-api,test-api
-Lcom/android/internal/statsd/flags/com/android/os/statsd/flags/CustomFeatureFlags$$ExternalSyntheticLambda8;->test(Ljava/lang/Object;)Z,core-platform-api,public-api,system-api,test-api
