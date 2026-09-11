@@ -107,6 +107,21 @@ void AStatsEvent_release(AStatsEvent* event);
 void AStatsEvent_setAtomId(AStatsEvent* event, uint32_t atomId);
 
 /**
+ * Sets the timestamp for this StatsEvent.
+ *
+ * This API is only meant to be used for atoms logged while the CPU is asleep
+ * (e.g. atoms from ambient domains on devices with an MCU).
+ * Most atoms should not override the timestamp.
+ *
+ * The timestamp should represent elapsed realtime since boot (CLOCK_BOOTTIME)
+ * in nanoseconds.
+ *
+ * The timestamp must not be in the future. If the timestamp is in the future, the
+ * API has no effect and the default, which is current elapsed realtime, is used.
+ **/
+void AStatsEvent_setTimestampNanos(AStatsEvent* event, uint64_t timestampNs) __INTRODUCED_IN(38);
+
+/**
  * Writes an int32_t field to this StatsEvent.
  **/
 void AStatsEvent_writeInt32(AStatsEvent* event, int32_t value);
