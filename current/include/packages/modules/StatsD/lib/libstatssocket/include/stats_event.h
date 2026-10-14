@@ -42,6 +42,14 @@
  * order that they are defined in the atom.
  */
 
+#ifndef __ANDROID_API_T__
+#define __ANDROID_API_T__ 33
+#endif
+
+#ifndef __INTRODUCED_IN
+#define __INTRODUCED_IN(api_level)
+#endif
+
 #ifdef __cplusplus
 extern "C" {
 #endif  // __CPLUSPLUS
@@ -73,6 +81,10 @@ void AStatsEvent_build(AStatsEvent* event);
 
 /**
  * Writes the StatsEvent to the stats log.
+ * For all UIDs except system server:
+ * - Returns number of bytes written into the socket, or socket error code.
+ * For the system_server the write is done via intermediate queue:
+ * - Returns 1 if event was added into the queue, 0 otherwise.
  *
  * After calling this, AStatsEvent_release must be called,
  * and is the only function that can be safely called.
